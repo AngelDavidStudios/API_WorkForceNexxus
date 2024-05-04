@@ -1,10 +1,11 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
+using WFN.Models.Models.Base;
 
 namespace WFN.Models.Models;
 
-public class EmployeePaySlipModel
+public class EmployeePaySlipModel : BaseModel
 {
     public EmployeePaySlipModel()
     {
