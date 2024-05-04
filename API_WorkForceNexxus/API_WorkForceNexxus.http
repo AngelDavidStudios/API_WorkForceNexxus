@@ -1,0 +1,6 @@
+@API_WorkForceNexxus_HostAddress = http://localhost:5084
+
+GET {{API_WorkForceNexxus_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

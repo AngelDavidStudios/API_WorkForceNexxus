@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_WorkForceNexxus", "API_WorkForceNexxus\API_WorkForceNexxus.csproj", "{03D890FC-466F-4728-AD73-502140B4E66B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFN.Models", "WFN.Models\WFN.Models.csproj", "{57FB6DAD-1882-4020-A759-9158EFB05249}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03D890FC-466F-4728-AD73-502140B4E66B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03D890FC-466F-4728-AD73-502140B4E66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03D890FC-466F-4728-AD73-502140B4E66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03D890FC-466F-4728-AD73-502140B4E66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57FB6DAD-1882-4020-A759-9158EFB05249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57FB6DAD-1882-4020-A759-9158EFB05249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57FB6DAD-1882-4020-A759-9158EFB05249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57FB6DAD-1882-4020-A759-9158EFB05249}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
