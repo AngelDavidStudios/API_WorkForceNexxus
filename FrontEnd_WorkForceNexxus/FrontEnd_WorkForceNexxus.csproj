@@ -1,0 +1,96 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\API_WorkForceNexxus\API_WorkForceNexxus.csproj" />
+      <ProjectReference Include="..\WFN.Models\WFN.Models.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Views\Employee\**" />
+      <Compile Remove="Views\PayRoll\**" />
+      <Compile Remove="Views\Common\**" />
+      <Compile Remove="Views\Attendence\**" />
+      <Compile Remove="Views\Admin\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Views\Employee\**" />
+      <EmbeddedResource Remove="Views\PayRoll\**" />
+      <EmbeddedResource Remove="Views\Common\**" />
+      <EmbeddedResource Remove="Views\Attendence\**" />
+      <EmbeddedResource Remove="Views\Admin\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Views\Employee\**" />
+      <Content Remove="Views\PayRoll\**" />
+      <Content Remove="Views\Common\**" />
+      <Content Remove="Views\Attendence\**" />
+      <Content Remove="Views\Admin\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Views\Employee\**" />
+      <None Remove="Views\PayRoll\**" />
+      <None Remove="Views\Common\**" />
+      <None Remove="Views\Attendence\**" />
+      <None Remove="Views\Admin\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Employee\Attendence.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Employee\AwardList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Employee\ChangePassword.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Employee\EditLeaveApplication.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Employee\EmpPaySlipDetails.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Employee\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Employee\LeaveApplication.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Employee\LeaveApplicationList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Employee\PaySlipList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Employee\PrintPaySlip.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Employee\Profile.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PayRoll\AllowanceList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PayRoll\AllowanceTypeList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PayRoll\CreatePaySlip.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PayRoll\EmployeeWithAllowance.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PayRoll\EmpPaySlipDetails.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PayRoll\PaySlipDetails.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PayRoll\PaySlipList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PayRoll\PrintPaySlip.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Common\AddDesignation.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Common\AddEmployee.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Common\DepartmentList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Common\DesignationList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Common\EditDesignation.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Common\EditEmployee.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Common\EmployeeList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Attendence\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Attendence\TakeAttendence.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\AddAward.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\AddHoliday.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\AddLeaveGroup.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\AddLeaveGroupMapping.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\AddNotice.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\AwardList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\ChangePassword.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\EditAward.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\EditGroupLeave.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\EditHoliday.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\EditLeaveGroupEmployee.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\EditNotice.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\Holidays.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\LeaveApplicationList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\LeaveGroupList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\LeaveGroupMappingList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\LeaveTypeList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Admin\NoticeList.cshtml" />
+    </ItemGroup>
+
+</Project>
