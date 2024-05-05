@@ -91,6 +91,17 @@
       <_ContentIncludedByDefault Remove="Views\Admin\LeaveGroupMappingList.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Admin\LeaveTypeList.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Admin\NoticeList.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Company\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
     </ItemGroup>
 
 </Project>
