@@ -12,38 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Remove="Views\Employee\**" />
-      <Compile Remove="Views\PayRoll\**" />
-      <Compile Remove="Views\Common\**" />
-      <Compile Remove="Views\Attendence\**" />
-      <Compile Remove="Views\Admin\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <EmbeddedResource Remove="Views\Employee\**" />
-      <EmbeddedResource Remove="Views\PayRoll\**" />
-      <EmbeddedResource Remove="Views\Common\**" />
-      <EmbeddedResource Remove="Views\Attendence\**" />
-      <EmbeddedResource Remove="Views\Admin\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Content Remove="Views\Employee\**" />
-      <Content Remove="Views\PayRoll\**" />
-      <Content Remove="Views\Common\**" />
-      <Content Remove="Views\Attendence\**" />
-      <Content Remove="Views\Admin\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="Views\Employee\**" />
-      <None Remove="Views\PayRoll\**" />
-      <None Remove="Views\Common\**" />
-      <None Remove="Views\Attendence\**" />
-      <None Remove="Views\Admin\**" />
-    </ItemGroup>
-
-    <ItemGroup>
       <_ContentIncludedByDefault Remove="Views\Employee\Attendence.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Employee\AwardList.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Employee\ChangePassword.cshtml" />

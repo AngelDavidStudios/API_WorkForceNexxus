@@ -1,3 +1,5 @@
+using API_WorkForceNexxus.Data.Interfaces;
+using API_WorkForceNexxus.Repository;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
