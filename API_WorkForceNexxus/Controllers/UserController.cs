@@ -1,6 +1,7 @@
 using API_WorkForceNexxus.Data.Interfaces.Base;
 using Microsoft.AspNetCore.Mvc;
 using WFN.Models.Models;
+using WFN.Models.Models.ViewModel;
 
 namespace API_WorkForceNexxus.Controllers;
 
@@ -74,6 +75,42 @@ public class UserController : ControllerBase
         await _userRepository.Delete(id);
         return Ok(await _userRepository.SaveChangesAsync());
     }
+    
+    #endregion
+    
+    #region Change Password
+    
+    [HttpPost]
+    [Route("ChangePassword")]
+    public async Task<ActionResult> ChangePassword(ChangePasswordViewModel model)
+    {
+        var currentUserId = await CurrentUserId();
+        var user = (await _userRepository.GetAllAsync()).FirstOrDefault(x => x.Id == currentUserId);
+
+        if (user != null && model.CurrentPass == user.Password)
+        {
+            user.Password = model.NewPass;
+            _userRepository.Update(user);
+            return Ok(new { message = "Password changed successfully!" });
+        }
+        return BadRequest(new { message = "Current password doesn't match, Failed to changed password!" });
+    }
+
+    private async Task<int> CurrentUserId()
+    {
+        var user = (await _userRepository.GetAllAsync()).SingleOrDefault(x => x.Email == User.Identity.Name);
+        if (user == null)
+        {
+            throw new Exception("User not found");
+        }
+        return user.Id;
+    }
+
+    private async Task<UserModel> CurrentUser()
+    {
+        var user = (await _userRepository.GetAllAsync()).SingleOrDefault(x => x.Email == User.Identity.Name);
+        return user;
+}
     
     #endregion
 }

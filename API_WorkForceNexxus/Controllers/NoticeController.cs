@@ -18,7 +18,7 @@ public class NoticeController : ControllerBase
     }
     
     [HttpGet]
-    [Route("Notices")]
+    [Route("NoticeList")]
     public async Task<IActionResult> GetNotices()
     {
         var notices = await _noticeRepository.GetAllAsync();

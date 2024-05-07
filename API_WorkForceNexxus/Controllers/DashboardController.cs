@@ -29,5 +29,7 @@ namespace API_WorkForceNexxus.Controllers
             dashboard.Holidays = _dashboardRepository.LastFiveHolidays().ToList();
             return Ok(dashboard);
         }
+        
+        
     }
 }

@@ -18,7 +18,7 @@ public class AwardController : ControllerBase
     }
     
     [HttpGet]
-    [Route("Awards")]
+    [Route("AwardList")]
     public async Task<IActionResult> GetAwards()
     {
         var awards = await _awardRepository.GetAllAsync();
