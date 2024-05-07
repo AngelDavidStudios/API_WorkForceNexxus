@@ -5,6 +5,7 @@ using API_WorkForceNexxus.Repository;
 using API_WorkForceNexxus.Repository.Base;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+using WFN.Models.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

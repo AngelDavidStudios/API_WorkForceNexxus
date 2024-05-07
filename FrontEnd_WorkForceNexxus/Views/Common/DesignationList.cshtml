@@ -7,14 +7,14 @@ int i = 1;
 
 <div class="row page-titles">
     <div class="col-md-5 align-self-center">
-        <h3 class="text-themecolor">Designation List</h3>
+        <h3 class="text-themecolor">Lista Puestos</h3>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Home</a></li>
-            <li class="breadcrumb-item active">Designation List </li>
+            <li class="breadcrumb-item active">Lista puestos </li>
         </ol>
     </div>
     <div class="col-md-7 align-self-center text-right d-none d-md-block">
-        <a asp-action="AddDesignation" class="btn btn-info"><i class="fa fa-plus-circle"></i> Create New</a>
+        <a asp-action="AddDesignation" class="btn btn-info"><i class="fa fa-plus-circle"></i> Crear nuevo</a>
     </div>
     <div class="">
         <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
@@ -32,8 +32,8 @@ int i = 1;
                         <thead>
                         <tr>
                             <th>No</th>
-                            <th>Department </th>
-                            <th>Designation</th>
+                            <th>Departamento </th>
+                            <th>Puesto</th>
                             <th class="text-nowrap">Action</th>
                         </tr>
                         </thead>
@@ -44,13 +44,6 @@ int i = 1;
                         <tr>
                             <td>@i</td>
                             <td colspan="2">@item.Name</td>
-                            @*<td>
-                                               @item.Name
-                                        </td>
-
-                                        <td class="text-nowrap">
-                                           
-                                        </td>*@
                             <td></td>
                         </tr>
                         i++;

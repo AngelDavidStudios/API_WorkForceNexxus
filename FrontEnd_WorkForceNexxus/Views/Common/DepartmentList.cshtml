@@ -7,14 +7,14 @@
 
 <div class="row page-titles">
     <div class="col-md-5 align-self-center">
-        <h3 class="text-themecolor">Depertment List</h3>
+        <h3 class="text-themecolor">Lista departamentos</h3>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Home</a></li>
-            <li class="breadcrumb-item active">Depertment List </li>
+            <li class="breadcrumb-item active">Lista departamentos </li>
         </ol>
     </div>
     <div class="col-md-7 align-self-center text-right d-none d-md-block">
-        <button type="button" class="btn btn-info"><i class="fa fa-plus-circle"></i> Create New</button>
+        <button type="button" class="btn btn-info"><i class="fa fa-plus-circle"></i> Crear nuevo</button>
     </div>
     <div class="">
         <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
@@ -32,7 +32,7 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Name</th>
+                                <th>Nombre</th>
                                 <th class="text-nowrap">Action</th>
                             </tr>
                         </thead>
@@ -65,13 +65,13 @@
             <div class="card-body">
                 <form  asp-controller="common" asp-action="DepartmentList" method="post">
                     <div class="form-group">
-                        <label for="Name">Department</label>
+                        <label for="Name">Departamento</label>
                         <input type="hidden" name="Id" value="0" id="inputId"/>
                          <input type="text" name="Name" class="form-control" id="Name" placeholder="Enter Department Name">
                         @Html.ValidationMessage("Name", "", new { @class = "text-danger" })
                     </div>
-                    <button type="submit"  id="btnSave" class="btn btn-sm btn-success waves-effect waves-light "><i class="fa fa-plus"></i> Add</button>
-                    <button type="button" id="btnCancel" class="btn btn-sm btn-danger waves-effect waves-light "><i class="fa fa-remove"></i> Cancel</button>
+                    <button type="submit"  id="btnSave" class="btn btn-sm btn-success waves-effect waves-light "><i class="fa fa-plus"></i> Agregar</button>
+                    <button type="button" id="btnCancel" class="btn btn-sm btn-danger waves-effect waves-light "><i class="fa fa-remove"></i> Cancelar</button>
                   
                 </form>
             </div>

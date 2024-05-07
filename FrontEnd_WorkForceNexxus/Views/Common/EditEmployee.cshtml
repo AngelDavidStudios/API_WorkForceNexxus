@@ -6,10 +6,10 @@
 
 <div class="row page-titles">
     <div class="col-md-5 align-self-center">
-        <h3 class="text-themecolor">Employee</h3>
+        <h3 class="text-themecolor">Empleado</h3>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-            <li class="breadcrumb-item active">Employee</li>
+            <li class="breadcrumb-item active">Empleado</li>
         </ol>
     </div>
 
@@ -24,7 +24,7 @@
             <div class="card-body">
                 <form method="post" enctype="multipart/form-data" asp-controller="common" asp-action="EditEmployee">
                     <div class="form-body">
-                        <h3 class="card-title">Person Info</h3>
+                        <h3 class="card-title">Información personal</h3>
                         <hr>
 
 
@@ -43,7 +43,7 @@
                             <br /><br />
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="Name"></label>
+                                    <label class="control-label" asp-for="Name">Nombre</label>
                                     <input type="text" id="firstName" class="form-control" asp-for="Name" placeholder="Enter Name">
                                     <span asp-validation-for="Name" class="text-danger"></span>
                                 </div>
@@ -51,14 +51,14 @@
                             <!--/span-->
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="Email"></label>
+                                    <label class="control-label" asp-for="Email">Email</label>
                                     <input type="text" id="firstName" class="form-control" asp-for="Email" placeholder="Enter Email">
                                     <span asp-validation-for="Email" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="Mobile"></label>
+                                    <label class="control-label" asp-for="Mobile">Celular</label>
                                     <input type="text" id="firstName" class="form-control" asp-for="Mobile" placeholder="Enter Mobile ">
                                     <span asp-validation-for="Mobile" class="text-danger"></span>
                                 </div>
@@ -69,11 +69,11 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group has-success">
-                                    <label class="control-label" asp-for="Gender"></label>
+                                    <label class="control-label" asp-for="Gender">Género</label>
                                     <select class="form-control " asp-for="Gender">
-                                        <option>Select</option>
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
+                                        <option>Seleccionar</option>
+                                        <option value="Male">Masculino</option>
+                                        <option value="Female">Femenino</option>
                                     </select>
                                     <span asp-validation-for="Gender" class="text-danger"></span>
                                 </div>
@@ -81,7 +81,7 @@
                             <!--/span-->
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="DateOfBirth"></label>
+                                    <label class="control-label" asp-for="DateOfBirth">Fecha de nacimiento</label>
                                     <input type="date" asp-for="DateOfBirth" class="form-control" placeholder="dd/mm/yyyy">
                                     <span asp-validation-for="DateOfBirth" class="text-danger"></span>
                                 </div>
@@ -93,7 +93,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="PresentAddress"></label>
+                                    <label class="control-label" asp-for="PresentAddress">Direcció actual</label>
                                     <textarea type="text" asp-for="PresentAddress" class="form-control" placeholder="Enter Present Address"></textarea>
                                     <span asp-validation-for="PresentAddress" class="text-danger"></span>
                                 </div>
@@ -102,7 +102,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <div class="form-group">
-                                        <span><input type="checkbox" /> Same As Present Address </span>
+                                        <span><input type="checkbox" /> Igual que la direccioón actual </span>
                                         <label class="control-label float-lg-right" asp-for="PermanentAddress"></label>
                                         <textarea type="text" asp-for="PermanentAddress" class="form-control" placeholder="Enter Present Address"></textarea>
                                         <span asp-validation-for="PermanentAddress" class="text-danger"></span>
@@ -112,12 +112,12 @@
                             <!--/span-->
                         </div>
 
-                        <h3 class="box-title m-t-40">Company Info</h3>
+                        <h3 class="box-title m-t-40">Información de la empresa</h3>
                         <hr>
                         <div class="row">
                             <div class="col-md-4 ">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="JoiningDate"></label>
+                                    <label class="control-label" asp-for="JoiningDate"> Fecha ingresp</label>
                                     <input type="date" asp-for="JoiningDate" class="form-control" placeholder="Enter Joining Date"></input>
                                     <span asp-validation-for="JoiningDate" class="text-danger"></span>
                                 </div>
@@ -125,7 +125,7 @@
 
                             <div class="col-md-4 ">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="DepertmentId"></label>
+                                    <label class="control-label" asp-for="DepertmentId"> ID Departamento</label>
                                     <select class="form-control" id="department" asp-for="DepertmentId" asp-items="@(ViewBag.Department)" required>
                                         <option value="">Select Department</option>
                                     </select>
@@ -134,9 +134,9 @@
                             </div>
                             <div class="col-md-4 ">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="DegisnationId"></label>
+                                    <label class="control-label" asp-for="DegisnationId">ID Puesto</label>
                                     <select asp-for="DegisnationId" id="designation" class="form-control" asp-items="@(ViewBag.Designation)" required>
-                                        <option value="">Select Degisnation</option>
+                                        <option value="">Seleccionar Puesto</option>
                                     </select>
                                     <span asp-validation-for="DegisnationId" class="text-danger"></span>
                                 </div>
@@ -145,14 +145,14 @@
                         <div class="row">
                             <div class="col-md-4 ">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="BasicSalary"></label>
+                                    <label class="control-label" asp-for="BasicSalary"> Salario</label>
                                     <input type="text" asp-for="BasicSalary" class="form-control" placeholder="Enter Basic Salary"></input>
                                     <span asp-validation-for="BasicSalary" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 ">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="ResignDate"></label>
+                                    <label class="control-label" asp-for="ResignDate">Fecha Despido</label>
                                     <input type="date" asp-for="ResignDate" class="form-control" />
                                     <span asp-validation-for="ResignDate" class="text-danger"></span>
                                 </div>
@@ -164,7 +164,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label asp-for="CV">Browse the CV</label>
+                                    <label asp-for="CV">Subir CV</label>
                                     <div class="controls">
                                         <input type="file" name="file" asp-for="CV" class="form-control">
                                     </div>
@@ -172,7 +172,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label asp-for="NationalId">Browse the NID</label>
+                                    <label asp-for="NationalId">Actualizar Cedula</label>
                                     <div class="controls">
                                         <input type="file" name="file" asp-for="NationalId" class="form-control">
                                     </div>
@@ -180,7 +180,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label asp-for="Other">Browse Other documentation</label>
+                                    <label asp-for="Other">Actualizar documentación</label>
                                     <div class="controls">
                                         <input type="file" name="file" asp-for="Other" class="form-control">
                                     </div>
@@ -189,19 +189,19 @@
                         </div>
 
                         <!--/row-->
-                        <h3 class="box-title m-t-40">Bank Info</h3>
+                        <h3 class="box-title m-t-40">información bancaria</h3>
                         <hr>
                         <div class="row">
                             <div class="col-md-6 ">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="AccountName"></label>
+                                    <label class="control-label" asp-for="AccountName">Nombre de la cuenta</label>
                                     <input type="text" asp-for="AccountName" class="form-control" placeholder="Enter Accunt Name"></input>
                                     <span asp-validation-for="AccountName" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-md-6 ">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="AccountNumber"></label>
+                                    <label class="control-label" asp-for="AccountNumber">Numero de la cuenta</label>
                                     <input type="text" asp-for="AccountNumber" class="form-control" placeholder="Enter Account Number"></input>
                                     <span asp-validation-for="AccountNumber" class="text-danger"></span>
                                 </div>
@@ -217,7 +217,7 @@
                             </div>
                             <div class="col-md-6 ">
                                 <div class="form-group">
-                                    <label class="control-label" asp-for="Branch"></label>
+                                    <label class="control-label" asp-for="Branch">marca</label>
                                     <input type="text" asp-for="Branch" class="form-control" placeholder="Enter Branch Name"></input>
                                     <span asp-validation-for="Branch" class="text-danger"></span>
                                 </div>
@@ -225,7 +225,7 @@
                         </div>
                     </div>
                     <div class="form-actions">
-                        <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
+                        <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Guardar</button>
                         <button type="button" class="btn btn-inverse">Cancel</button>
                     </div>
                 </form>

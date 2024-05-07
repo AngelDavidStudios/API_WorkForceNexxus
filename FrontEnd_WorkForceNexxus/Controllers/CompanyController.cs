@@ -21,14 +21,6 @@ public class CompanyController : Controller
     [HttpGet]
     public async Task<IActionResult> Index()
     {
-        var response = await _httpClient.GetAsync("Company/GetAll");
-        if (response.IsSuccessStatusCode)
-        {
-            var result = await response.Content.ReadAsStringAsync();
-            var settings = JsonConvert.DeserializeObject<List<CompanyModel>>(result).FirstOrDefault();
-            if (settings != null)
-                return View(settings);
-        }
         return View(new CompanyModel());
     }
 
@@ -42,7 +34,7 @@ public class CompanyController : Controller
             var path = Path.Combine(
                 Directory.GetCurrentDirectory(), "wwwroot/Images",
                 logoPostedFileBase.FileName);
-
+    
             using (var stream = new FileStream(path, FileMode.Create))
             {
                 logoPostedFileBase.CopyTo(stream);
@@ -60,15 +52,16 @@ public class CompanyController : Controller
                     model.Logo = settings.Logo;
             }
         }
-
+    
         var content = new StringContent(JsonConvert.SerializeObject(model), Encoding.UTF8, "application/json");
-        var updateResponse = await _httpClient.PutAsync("Company/Update", content);
-        if (updateResponse.IsSuccessStatusCode)
+        var postResponse = await _httpClient.PostAsync("Company/Add", content);
+        if (postResponse.IsSuccessStatusCode)
         {
             return RedirectToAction("index");
         }
         return View(model);
     }
+    
     
     
 }
