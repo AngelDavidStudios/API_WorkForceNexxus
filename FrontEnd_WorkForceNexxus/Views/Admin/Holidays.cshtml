@@ -7,14 +7,14 @@
 
 <div class="row page-titles">
     <div class="col-md-5 align-self-center">
-        <h3 class="text-themecolor">Holiday List</h3>
+        <h3 class="text-themecolor">Lista dia festivo</h3>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Home</a></li>
-            <li class="breadcrumb-item active">Holiday List </li>
+            <li class="breadcrumb-item active">Lista dia festivo </li>
         </ol>
     </div>
     <div class="col-md-7 align-self-center text-right d-none d-md-block">
-        <a asp-action="AddHoliday" class="btn btn-info"><i class="fa fa-plus-circle"></i> Add New</a>
+        <a asp-action="AddHoliday" class="btn btn-info"><i class="fa fa-plus-circle"></i> Agregar nuevo</a>
     </div>
     
 </div>
@@ -24,40 +24,40 @@
         <div id="MonthList">
             <ul class="list-group list-group-full">
                 <li class="list-group-item month @(month == "January" ? "active" : "")">
-                    <a> <i class="mdi mdi-calendar"></i> January </a>
+                    <a> <i class="mdi mdi-calendar"></i> Enero </a>
                 </li>
                 <li class="list-group-item month">
-                    <a> <i class="mdi mdi-calendar @(month == "February" ? "active" : "")"></i> February </a>
+                    <a> <i class="mdi mdi-calendar @(month == "February" ? "active" : "")"></i> Febrero </a>
                 </li>
                 <li class="list-group-item month @(month == "March" ? "active" : "")">
-                    <a> <i class="mdi mdi-calendar"></i> March </a>
+                    <a> <i class="mdi mdi-calendar"></i> Marzo </a>
                 </li>
                 <li class="list-group-item month @(month == "April" ? "active" : "")">
-                    <a> <i class="mdi mdi-calendar"></i> April </a>
+                    <a> <i class="mdi mdi-calendar"></i> Abril </a>
                 </li>
                 <li class="list-group-item month @(month == "May" ? "active" : "")">
-                    <a> <i class="mdi mdi-calendar"></i> May </a>
+                    <a> <i class="mdi mdi-calendar"></i> Mayo </a>
                 </li>
                 <li class="list-group-item month @(month == "June" ? "active" : "")">
-                    <a> <i class="mdi mdi-calendar"></i> June </a>
+                    <a> <i class="mdi mdi-calendar"></i> Junio </a>
                 </li>
                 <li class="list-group-item month @(month == "July" ? "active" : "")">
-                    <a> <i class="mdi mdi-calendar"></i> July </a>
+                    <a> <i class="mdi mdi-calendar"></i> Julio </a>
                 </li>
                 <li class="list-group-item month @(month == "August" ? "active" : "")">
-                    <a> <i class="mdi mdi-calendar"></i> August </a>
+                    <a> <i class="mdi mdi-calendar"></i> Agosto </a>
                 </li>
                 <li class="list-group-item month @(month == "September" ? "active" : "")">
-                    <a> <i class="mdi mdi-calendar"></i> September </a>
+                    <a> <i class="mdi mdi-calendar"></i> Septiembre </a>
                 </li>
                 <li class="list-group-item month @(month == "October" ? "active" : "")">
-                    <a> <i class="mdi mdi-calendar"></i> October </a>
+                    <a> <i class="mdi mdi-calendar"></i> Octubre </a>
                 </li>
                 <li class="list-group-item month @(month == "November" ? "active" : "")">
-                    <a> <i class="mdi mdi-calendar"></i> November </a>
+                    <a> <i class="mdi mdi-calendar"></i> Noviembre </a>
                 </li>
                 <li class="list-group-item month @(month == "December" ? "active" : "")">
-                    <a> <i class="mdi mdi-calendar"></i> December </a>
+                    <a> <i class="mdi mdi-calendar"></i> Diciembre </a>
                 </li>
             </ul>
         </div>
@@ -65,16 +65,14 @@
     <div class="col-md-8">
         <div class="card">
             <div ifass="card-body">
-                @*<h4 class="card-title">Bordered Table</h4>
-                    <h6 class="card-subtitle">Add<code>.table-bordered</code>for borders on all sides of the table and cells.</h6>*@
                 <div class="">
                     <table class="table table-bordered">
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Date </th>
-                                <th>Occasion</th>
-                                <th>Day</th>
+                                <th>Fecha </th>
+                                <th>Descripcion</th>
+                                <th>Dia</th>
                                 <th class="text-nowrap">Action</th>
                             </tr>
                         </thead>

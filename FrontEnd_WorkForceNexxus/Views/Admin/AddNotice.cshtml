@@ -6,10 +6,10 @@ ViewData["Title"] = "Add Notice";
 
 <div class="row page-titles">
     <div class="col-md-5 align-self-center">
-        <h3 class="text-themecolor">Add Notice</h3>
+        <h3 class="text-themecolor">Agregar anuncio</h3>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Dashboard">Home</a></li>
-            <li class="breadcrumb-item active">Add Notice </li>
+            <li class="breadcrumb-item active">Agregar anuncio </li>
         </ol>
     </div>
 
@@ -21,12 +21,12 @@ ViewData["Title"] = "Add Notice";
             <div class="card-body">
                 <form asp-controller="Admin" asp-action="AddNotice" method="post">
                     <div class="form-group">
-                        <label asp-for="Subject"></label>
+                        <label asp-for="Subject"> Asunto</label>
                         <input type="text" asp-for="Subject" class="form-control" placeholder="Enter Subject">
                         <span asp-validation-for="Subject" class="text-danger" />
                     </div>
                     <div class="form-group">
-                        <label asp-for="Message"></label>
+                        <label asp-for="Message">Mensaje</label>
                         <textarea asp-for="Message" class="form-control" placeholder="Enter Message"></textarea>
                         <span asp-validation-for="Message" class="text-danger" />
                     </div>
